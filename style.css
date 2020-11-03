@@ -1,0 +1,60 @@
+@font-face {
+    src: url("fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf");
+    font-family: gothic;
+}
+
+.custom-font{
+    font-family: gothic;
+}
+
+.curve::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    margin: auto;
+    background-color: lightgray;
+    box-shadow: 0px 2px 5px grey;
+}
+
+.com{
+    height: 200px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.rx{
+    height: 400px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: -35px !important;
+}
+.mt-h {
+    margin-top: -160px;
+    height: 25px;
+}
+.history{
+    margin-bottom: 6px;
+    margin-top: -130px;
+}
+
+.mt{
+    margin-top: -146px;
+    margin-bottom: 3px;
+    height: 149px;
+}
+
+.margintop{
+    margin-top: 3px;
+}
+
+input{
+    font-size: 12px !important;
+    outline: none;
+}
+
+textarea{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
