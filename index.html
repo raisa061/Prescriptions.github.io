@@ -11,16 +11,20 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="container">
             <div class="row curve">
-                <div class="col-lg-4 col-4 text-lg-left text-left">
-                    <i class="fas fa-bars text-primary"></i>
+                <div class="col text-center">
+                    <img src="img/logo.png" alt="logo" class="logo">
                 </div>
-                <div class="col-lg-4 col-4 text-lg-center text-center">
-                    <h3 class="text-primary custom-font font-weight-bold">mediaMate</h3>
-                </div>
-                <div class="col-lg-4 col-4 text-lg-right text-right">
-                    <i class="fas fa-bell text-primary"></i>
+            </div>
+    </div>
+
+    <div class="row m-3"></div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h3 class="custom-font font-weight-bold text-secondary pres">Prescriptions</h3>
                 </div>
             </div>
         </div>
@@ -31,29 +35,13 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <i class="fas fa-angle-left text-primary"></i>
-                </div>
-                <div class="col-4 text-center">
-                    <h3 class="custom-font font-weight-bold text-secondary">Prescriptions</h3>
-                </div>
-                <div class="col-4"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row m-3"></div>
-
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-6">
+                <div class="col-md-7 col-6 doc-details">
                     <h4 class="text-primary font-weight-light custom-font">Dr. Akram Abbas</h4>
                     <p class="custom-font text-secondary">BDS (LONDON) MPH (NSU)</p>
-                    <p class="font-weight-bold custom-font text-secondary" style="font-size: 14px;">#504372</p>
+                    <p class="font-weight-bold custom-font text-secondary serial">#504372</p>
                 </div>
                 <div class="col-md-5 col-5">
-                    <p class="text-right custom-font text-secondary"> <span class="font-weight-bold custom-font text-secondary">Date</span> : 07.10.2020</p>
+                    <p class="text-right custom-font text-secondary date"> <span class="font-weight-bold custom-font text-secondary">Date</span> : 07.10.2020</p>
                 </div>
             </div>
         </div>
@@ -65,13 +53,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="border p-2"><input type="text" placeholder="NAME :" class="w-100 h-100 border-0 custom-font"></p>
+                        <p class="border"><input type="text" placeholder="NAME :" class="w-100 h-100 border-0 custom-font"></p>
                     </div>
                     <div class="col-md-3">
-                        <p class="border p-2"><input type="text" placeholder="GENDER :" class="w-100 border-0 custom-font"></p>
+                        <p class="border"><input type="text" placeholder="GENDER :" class="w-100 border-0 custom-font"></p>
                     </div>
                     <div class="col-md-3">
-                        <p class="border p-2"><input type="text" placeholder="AGE :" class="w-100 border-0 custom-font"></p>
+                        <p class="border"><input type="text" placeholder="AGE :" class="w-100 border-0 custom-font"></p>
                     </div>
                 </div>
             </div>
@@ -80,10 +68,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="border p-2"><input type="text" placeholder="PHONE :" class="w-100 border-0 custom-font"></p>
+                        <p class="border"><input type="text" placeholder="PHONE :" class="w-100 border-0 custom-font"></p>
                     </div>
                     <div class="col-md-6">
-                        <p class="border p-2"><input type="text" placeholder="NUMBER ID :" class="w-100 border-0 custom-font"></p>
+                        <p class="border"><input type="text" placeholder="NUMBER ID :" class="w-100 border-0 custom-font"></p>
                     </div>
                 </div>
             </div>
@@ -93,19 +81,17 @@
 
     <div class="row m-3"></div>
 <!--For desktop view-->
-    <div class="large d-none d-md-block">
+    <div class="large d-none d-md-block main">
 <!--Complaints & RX heading start-->
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 bg-primary">
+                    <div class="col-md-3 box-header p-3">
                         <p class="font-weight-bold text-white text-center m-0 p-0 custom-font">Complaints</p>
-
-
                     </div>
                     <div class="col-1"></div>
-                    <div class="col-md-8 bg-primary">
-                        <p class="font-weight-bold text-white text-center custom-font m-0 p-0">Rx</p>
+                    <div class="col-md-8 box-header p-3">
+                        <p class="font-weight-bold text-white text-center custom-font m-0 p-0">Medications</p>
                     </div>
 
 
@@ -118,12 +104,18 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 border com">
-                        <textarea></textarea>
+                    <div class="col-md-3 border com box">
+                        <div class="text">
+                            <p>Abdominal pain <br> Vomiting</p>
+                        </div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-8 border rx">
-                        <textarea></textarea>
+                    <div class="col-md-8 border rx box">
+                        <div class="text">
+                            <h3>Rx</h3>
+                            <p>Amoxicillin <span class="border-left border-right m-3 p-2"> 1+0+1 </span>2 weeks</p>
+                            <p>Esonix <span class="border-left border-right m-3 p-2"> 1+1+1 </span> After meals</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,7 +126,7 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 bg-primary mt-h">
+                    <div class="col-md-3 box-header mt-h p-3">
                         <p class="font-weight-bold text-white text-center custom-font m-0 p-0">History</p>
                     </div>
                 </div>
@@ -146,8 +138,10 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 border com history">
-                        <textarea></textarea>
+                    <div class="col-md-3 border com history box">
+                        <div class="text">
+                            <p>High blood pressure <br> Migraine</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,11 +152,11 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 bg-primary">
+                    <div class="col-md-3 box-header p-3">
                         <p class="font-weight-bold text-white text-center custom-font m-0 p-0">Diagnosis</p>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-8 bg-primary">
+                    <div class="col-md-8 box-header p-3">
                         <p class="font-weight-bold text-white text-center custom-font m-0 p-0">Follow-up</p>
                     </div>
                 </div>
@@ -174,12 +168,19 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 border com margintop">
-                        <textarea></textarea>
+                    <div class="col-md-3 border com box">
+                        <div class="text">
+                            <p>Endoscopy <br> Endoscopic biopsy</p>
+                        </div>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-8 border com margintop">
-                        <textarea></textarea>
+                    <div class="col-md-8 border com box">
+                        <div class="text">
+                            <p>
+                                Visit after 15days with test results <br>
+                                In case of emergency, visit after 3days
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,41 +197,75 @@
             <div class="container">
                 <div class="row">
 <!--complaints section start-->
-                    <div class="col-12 bg-primary">
+                    <div class="col-12 box-header">
                         <p class="font-weight-bold text-white text-center m-0 p-0">Complaints</p>
                     </div>
-                    <div class="col-12 border com"><textarea></textarea></div>
+                    <div class="col-12 border com box">
+                        <div>
+                            <p>Abdominal pain <br> Vomiting</p>
+                        </div>
+                    </div>
 <!--complaints section end-->
                     <div class="row m-3"></div>
 <!--Rx section start-->
-                    <div class="col-12 bg-primary">
-                        <p class="font-weight-bold text-white text-center m-0 p-0">Rx</p>
+                    <div class="col-12 box-header">
+                        <p class="font-weight-bold text-white text-center m-0 p-0">Medications</p>
                     </div>
-                    <div class="col-md-8 border rx"><textarea></textarea></div>
+                    <div class="col-md-8 border rx box">
+                        <div class="text">
+                            <h3>Rx</h3>
+                            <p>Napa 1+0+1</p>
+                            <p>Zorate 0+0+1</p>
+                            <p>Esonix 0+1+0</p>
+                        </div>
+                    </div>
 <!--Rx section end-->
                     <div class="row m-4"></div>
 <!--History section start-->
-                    <div class="col-12 bg-primary">
+                    <div class="col-12 box-header">
                         <p class="font-weight-bold text-white text-center m-0 p-0">History</p>
                     </div>
-                    <div class="col-12 border com"><textarea></textarea></div>
+                    <div class="col-12 border com box">
+                        <div class="text">
+                            <p>High blood pressure <br> Migraine</p>
+                        </div>
+                    </div>
 <!--History section end-->
                     <div class="row m-3"></div>
 <!--Diagnosis start-->
-                    <div class="col-12 bg-primary">
+                    <div class="col-12 box-header">
                         <p class="font-weight-bold text-white text-center m-0 p-0">Diagnosis</p>
                     </div>
-                    <div class="col-md-3 border com margintop"><textarea></textarea></div>
+                    <div class="col-md-3 border com box">
+                        <div class="text">
+                            <p>Endoscopy <br> Endoscopic biopsy</p>
+                        </div>
+                    </div>
 <!--Diagnosis end-->
                     <div class="row m-3"></div>
 <!--Follow-up start-->
-                    <div class="col-12 bg-primary">
+                    <div class="col-12 box-header">
                         <p class="font-weight-bold text-white text-center m-0 p-0">Follow-up</p>
                     </div>
-                    <div class="col-md-8 border com margintop"><textarea></textarea></div>
+                    <div class="col-md-8 border com box">
+                        <div class="text">
+                            <p>
+                                Visit after 15days with test results <br>
+                                In case of emergency, visit after 3days
+                            </p>
+                        </div>
+                    </div>
 <!--Follow-up end-->
                     <div class="row m-3"></div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row box-header">
+            <div class="col text-center custom-font footer-text">
+                <h4>demo text | location | copyright</h4>
             </div>
         </div>
     </div>
